@@ -300,7 +300,7 @@ sleep 1
 send AT!IMAGE?
 sleep 1
 send AT!RMARESET=1
-sleep 5
+sleep 10
 ! pkill cat
 sleep 1
 ! pkill minicom
