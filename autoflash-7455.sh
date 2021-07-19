@@ -291,8 +291,6 @@ function clear_modem_firmware() {
     sudo cat /dev/"$ttyUSB" 2>&1 | tee -a modem.log &  
     # Clear Previous PRI/FW Entries
     echo 'send AT
-send AT!NVBACKUP=2,snapshot
-sleep 5
 send AT!NVBACKUP?
 sleep 1
 send AT!IMAGE=0
