@@ -295,6 +295,12 @@ send AT!IMAGE=0
 sleep 1
 send AT!IMAGE?
 sleep 1
+send AT!NVBACKUP=2,snapshot
+sleep 5
+send AT!NVBACKUP?
+sleep 1
+send AT!RMARESET=1
+sleep 5
 ! pkill cat
 sleep 1
 ! pkill minicom
